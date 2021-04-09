@@ -10,28 +10,38 @@
 </head>
 
 <body>
+   
 <div class="row">
-    <div class="row" >
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="col-md-12" >
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top ">
             <!-- Brand -->
             <a class="navbar-brand" href="#" style="margin-left: 2em;">TechTable</a>
           
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                  </div>
+                </div>
+                
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                
+            </div>
           
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#About">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Courses</a>
+                  <a class="nav-link" href="#courses">Courses</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Apply Now</a>
+                  <a class="nav-link" href="#form">Mentor</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Testimonials</a>
@@ -41,7 +51,7 @@
           </nav>
     </div>
     
-    <div class="row">
+    <div class="row" id="About">
         <div class="col-md-6" id = "about">
             <img src="profile.jpg" style="border-radius: 10%;">
         </div>
@@ -52,58 +62,107 @@
         </div>
     </div>
     
-    <div class="row">
+    <div class="row" id="courses">
         <div class="col-md-3">
-            <div class="card" style="width:300px" id="card">
+            <div class="card mx-auto" style="width:300px" id="card">
                 <img class="card-img-top" src="web.jpg" alt="Card image" style="width: 300px; height: 180px;">
                 <div class="card-body text-center">
                   <h4 class="card-title">Web Development</h4>
                   <p class="card-text">This course will cover front-end and back-end technologies along with projects to make you expert in this field.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
+                  <a href="#" class="btn btn-primary">Apply now</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-3  justify-content-center">
-            <div class="card" style="width:300px" id="card">
+        <div class="col-md-3">
+            <div class="card mx-auto" style="width:300px" id="card">
                 <img class="card-img-top" src="app.jpg" alt="Card image" style="width: 300px; height: 180px;">
                 <div class="card-body text-center">
                   <h4 class="card-title">App Development</h4>
                   <p class="card-text">Core technologies covered will be Java, Flutter and Firebase along with projects for practical understanding of these.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
+                  <a href="#" class="btn btn-primary">Apply Now</a>
                 </div>
               </div>
         </div>
-        <div class="col-md-3 justify-content-center">
-            <div class="card" style="width:300px" id="card">
+        <div class="col-md-3">
+            <div class="card mx-auto" style="width:300px" id="card">
                 <img class="card-img-top" src="graphic.jpg" alt="Card image" style="width: 300px; height: 180px;">
                 <div class="card-body text-center">
                   <h4 class="card-title">Graphic Designing</h4>
                   <p class="card-text">Learn Photoshop, Illustrator, and InDesign by creating posters, logos, and more that will help you master this field.</p>
-                  <a href="#" class="btn btn-primary" style="align-items: center;">See Profile</a>
+                  <a href="#" class="btn btn-primary" style="align-items: center;">Apply Now</a>
                 </div>
               </div>
         </div>
-        <div class="col-md-3  justify-content-center">
-            <div class="card" style="width:300px" id="card">
+        <div class="col-md-3">
+            <div class="card mx-auto" style="width:300px" id="card">
                 <img class="card-img-top" src="personal.jpg" alt="Card image" style="width: 300px; height: 177px;">
                 <div class="card-body text-center">
                   <h4 class="card-title">Personality Development</h4>
                   <p class="card-text">Discover how to adapt quicker and thrive in a fast, fluid, ambiguous world.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
+                  <a href="#" class="btn btn-primary">Apply Now</a>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
     
-    <div class="row"></div>
+    <div class="row text-center" id = "form">
+        <h2 style="margin-top: 2rem;">Join as a Mentor</h2>
+        <form>
+        <div class="row">
+            <div class="form-group col-md-4 mx-auto">
+                <label for="inputEmail4">Name</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+            </div>
+            <div class="form-group col-md-4 mx-auto">
+                <label for="inputEmail4">E-Mail</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="E-Mail">
+            </div>
+        </div>  
+        <div class="row">
+            <div class="form-group  col-md-4 mx-auto">
+              <label for="inputAddress">Mobile Number</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="form-group  col-md-4 mx-auto">
+              <label for="inputAddress2">College</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="College">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group  col-md-4 mx-auto">
+                <label for="inputAddress2">Domain of Expertise</label>
+                <input type="text" class="form-control" id="inputAddress2">
+              </div>
+              <div class="form-group  col-md-4 mx-auto">
+                <label for="inputAddress2">Share some of your past works</label>
+                <input type="text" class="form-control" id="inputAddress2">
+              </div>
+        </div>         
+        
+              <div class="form-group col-md-4 mx-auto">
+                <label for="inputCity">Year of Graduation</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+
+            <button type="submit" class="btn btn-primary center" style="margin-top: 1rem;" onclick="click()">Submit</button>
+          </form>
+    </div>
     
-    <div class="row"></div>
+    <div class="row" id="test">
+        
+    </div>
     
     <div class="row">
         
     </div>
 
 </div>
+
+<script>
+    function click(){
+        alert("Thank you");
+    }
+</script>
 
 </body>
 </html>
