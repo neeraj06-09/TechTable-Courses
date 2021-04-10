@@ -6,14 +6,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
    
 <div class="row">
     <div class="col-md-12" >
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top ">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
             <!-- Brand -->
             <a class="navbar-brand" href="#" style="margin-left: 2em;">TechTable</a>
           
@@ -44,7 +44,7 @@
                   <a class="nav-link" href="#form">Mentor</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
+                    <a class="nav-link" href="#test">Testimonials</a>
                   </li>
               </ul>
             </div>
@@ -64,6 +64,7 @@
     
     <div class="row" id="courses" style="background-color:  #EEFBFB;">
         <div class="col-md-3">
+          <div class="zoom">
             <div class="card mx-auto" style="width:300px" id="card">
                 <img class="card-img-top" src="web.jpg" alt="Card image" style="width: 300px; height: 180px;">
                 <div class="card-body text-center">
@@ -71,7 +72,8 @@
                   <p class="card-text">This course will cover front-end and back-end technologies along with projects to make you expert in this field.</p>
                   <a href="#" class="btn btn-primary">Apply now</a>
                 </div>
-            </div>
+              </div>
+          </div>
         </div>
         <div class="col-md-3">
             <div class="card mx-auto" style="width:300px" id="card">
@@ -105,64 +107,120 @@
         </div>
     </div>
     
-    <div class="row text-center mx-auto" id = "form" style="background-color: #EEFBFB;">
-        <h2 style="margin-top: 2rem;">Join as a Mentor</h2>
+    <div class="row text-center mx-auto" id = "form" style="background-color:#fefbe9;">
+        <h2 style="margin-top: 2rem; color: black;">Join as a Mentor</h2>
         <form>
         <div class="row">
             <div class="form-group col-md-4 mx-auto">
-                <label for="inputEmail4">Name</label>
+                <label for="inputEmail4" style="color: black;">Name</label>
                 <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
             </div>
             <div class="form-group col-md-4 mx-auto">
-                <label for="inputEmail4">E-Mail</label>
+                <label for="inputEmail4" style="color: black;" >E-Mail</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="E-Mail">
             </div>
         </div>  
         <div class="row">
             <div class="form-group  col-md-4 mx-auto">
-              <label for="inputAddress">Mobile Number</label>
+              <label for="inputAddress" style="color: black;">Mobile Number</label>
               <input type="text" class="form-control" id="inputAddress">
             </div>
             <div class="form-group  col-md-4 mx-auto">
-              <label for="inputAddress2">College</label>
+              <label for="inputAddress2" style="color: black;">College</label>
               <input type="text" class="form-control" id="inputAddress2" placeholder="College">
             </div>
         </div>
         <div class="row">
             <div class="form-group  col-md-4 mx-auto">
-                <label for="inputAddress2">Domain of Expertise</label>
+                <label for="inputAddress2" style="color: black;">Domain of Expertise</label>
                 <input type="text" class="form-control" id="inputAddress2">
               </div>
               <div class="form-group  col-md-4 mx-auto">
-                <label for="inputAddress2">Share some of your past works</label>
+                <label for="inputAddress2" style="color: black;">Share some of your past works</label>
                 <input type="text" class="form-control" id="inputAddress2">
               </div>
         </div>         
         
               <div class="form-group col-md-4 mx-auto">
-                <label for="inputCity">Year of Graduation</label>
+                <label for="inputCity" style="color: black;">Year of Graduation</label>
                 <input type="text" class="form-control" id="inputCity">
               </div>
 
-            <button type="submit" class="btn btn-primary center" style="margin-top: 1rem;" onclick="click()">Submit</button>
+            <button type="submit" class="btn btn-primary center" style="margin-top: 1rem; margin-bottom: 2rem" onclick="click()">Submit</button>
           </form>
     </div>
     
-    <div class="row" id="test">
+    <div class="row" id="test" style="margin-top: 2rem;">
+      <h1 style="text-align: center;">Testimonials...</h1>
+        
+          <div class = "col-md-6 text-center" style="box-shadow:   3px 4px; margin-top: 1rem">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><p>- Akash</p></p>
+          </div>
+          <div class = "col-md-6 text-center"  style="box-shadow:  3px 4px; margin-top: 1rem">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><p>- Gautam</p></p>
+          </div>
+          <div class = "col-md-6 text-center"  style="box-shadow:  3px 4px; margin-top: 1rem">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit.<br><p>- Vinay </p></p>
+          </div>
+          <div class="col-md-6 text-center"  style="box-shadow: 3px 4px; margin-top: 1rem">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><p>- Sachin</p></p> 
+          </div>
         
     </div>
     
-    <div class="row">
-        
+    <div class="row" id = "footer">
+      <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        TechTable
+          <a class="text-white" href="https://techtable.co.in/">Visit Website</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
     </div>
 
 </div>
 
-<script>
-    function click(){
-        alert("Thank you");
-    }
-</script>
+<script src="script.js"></script>
+
 
 </body>
 </html>
